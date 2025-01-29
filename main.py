@@ -39,7 +39,7 @@ def find_scale(img):
     return scale
 
 
-cap = cv.VideoCapture(1)
+cap = cv.VideoCapture(0)
 path = "image/image.png"
 scale = 1
 object_num = 0
@@ -76,7 +76,7 @@ while True:
         pass
 
     cv.imshow("shape", image)
-    print("area: " + str(area) + "| scale: " + str(scale))
+    #print("area: " + str(area) + "| scale: " + str(scale))
 
     key = cv.waitKeyEx(1)
     if key == ord('q'):
